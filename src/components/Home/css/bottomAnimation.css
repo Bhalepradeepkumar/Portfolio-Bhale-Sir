@@ -1,0 +1,26 @@
+/* @keyframes movingAnime {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+} */
+
+.content{
+    animation-name: movingAnime;
+    animation-duration: 150s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.blurRight{
+    background: linear-gradient(to right,#1e1e29,transparent);
+
+    /* background: linear-gradient(to right,white,rgb(142, 53, 53)); */
+
+
+}
+.blurLeft{
+    background: linear-gradient(to left,#1e1e29,transparent);
+}

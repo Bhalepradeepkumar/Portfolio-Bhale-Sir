@@ -1,0 +1,74 @@
+.home {
+  padding-bottom: 5vh;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgb(84, 68, 96) 15%,
+    rgb(36, 43, 61) 50%,
+    rgb(26, 22, 29) 100%
+  );
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.glow-letter {
+  display: inline-block;
+  transition: text-shadow 0.3s ease;
+}
+
+.glow-letter:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.text {
+  animation: glitch2 3s ease infinite;
+}
+.text-box {
+  animation: glitch1 3s ease infinite;
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: skewX(60deg);
+  }
+  2% {
+    transform: skewX(0deg);
+  }
+  4% {
+    transform: skewX(-60deg);
+  }
+  6% {
+    transform: skewX(0deg);
+  }
+  20% {
+    transform: none;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes glitch1 {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 1;
+  }
+  58%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
