@@ -1,0 +1,6 @@
+.image {
+    background-image: url('../../assets/tom.jpeg'); /* Ensure the path is correct */
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat; 
+  }

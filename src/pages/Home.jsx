@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import ScrambleText from "../components/Home/ScrambleText.jsx";
 import BottomAnimation from "../components/Home/BottomAnimation.jsx";
+import Button from "../components/Home/Button.jsx";
 import "./css/Home.css";
-// import dots from "../assets/dots.drawio.svg";
 
 const Home = () => {
   const text = "Hi, I am Dr.Pradeep Kumar Bhale";
@@ -29,6 +29,7 @@ const Home = () => {
           <div>
             <ScrambleText />
           </div>
+          <Button/>
 
         </div>
         

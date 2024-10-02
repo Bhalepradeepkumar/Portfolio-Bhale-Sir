@@ -1,0 +1,12 @@
+.ToolbarWrapper-sc-exupb5-0{
+    display: none !important;
+  }
+
+.research{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a2a2a;
+    color: white;
+   
+}
