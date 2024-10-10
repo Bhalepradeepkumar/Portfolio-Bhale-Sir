@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/education/Card";
 import Line from "../components/common/Line";
@@ -6,6 +6,7 @@ import WorkExperience from "../components/education/WorkExperience";
 import ImageText from "../components/common/ImageText";
 import "./css/aboutMe.css";
 import tom from "../assets/tom.jpeg";
+import { motion,useMotionValue,useTransform } from "framer-motion";
 
 const AboutMe = () => {
   const aboutMe = {
@@ -40,11 +41,14 @@ const AboutMe = () => {
     - Won the 'Most Impactful Solution' award at the Hack4Good Hackathon for developing a disaster relief platform
     `,
   };
-  
 
+  const x = useMotionValue(0)
+  const opacity = useTransform(x, [-100, 0, 100], [0, 1, 0])
 
   return (
-    <div className="w-[100%] h-[100%] bg-[#2a2a2a]">
+    <motion.div className="w-[100%] h-[100%] bg-[#2a2a2a]"
+    drag="x" style={{ x, opacity }}
+    >
       <Navbar />
       <div className="pt-20"></div>
       <ImageText title={aboutMe.title} subtitle={aboutMe.subtitle} content={aboutMe.content}/>
@@ -65,7 +69,7 @@ const AboutMe = () => {
       <div className="w-[100vw] flex justify-center items-center h-[30vh]">
       </div>
     
-    </div>
+    </motion.div>
   );
 };
 

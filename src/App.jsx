@@ -1,24 +1,28 @@
-import { useState } from 'react'
-import './App.css'
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import { Button } from '@mui/material';
-import AboutMe from './pages/AboutMe';
-import Research from './pages/Research';
+import { Button } from "@mui/material";
+import AboutMe from "./pages/AboutMe";
+import Research from "./pages/Research";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+  const [count, setCount] = useState(0);
 
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
-        <Route path="/Research" element={<Research />} />
-        <Route path="/button" element={<Button />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Research" element={<Research />} />
+          <Route path="/button" element={<Button />} />
+        </Routes>
+      </AnimatePresence>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
