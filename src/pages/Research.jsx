@@ -6,10 +6,10 @@ import './css/research.css';
 
 const Research = () => {
   return (
-    <div className='research font-mono'>
+    <div className='research'>
       <Navbar/> 
       {/* <Timeline/> */}
-      <div className='pt-10'>
+      <div className='pt-10 font-mono'>
       <Chrono items={researchPapers} mode="VERTICAL_ALTERNATING" hideControls />
       </div>
     </div>

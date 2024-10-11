@@ -23,7 +23,7 @@ const Preloader = () => {
         setVisibleText(hello[index]);
         setIndex(index + 1);
       }
-    }, 190);
+    }, 300);
 
     setTimeout(() => {
       setBackgroundColor('#FFFFFF');

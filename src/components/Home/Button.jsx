@@ -1,12 +1,10 @@
-// about me button 
 import React from 'react'
-import './css/button.css'
 
 const Button = () => {
   return (
     <div>
-      <button className='btn-15 custom-btn p-2 rounded-md'>
-        click me
+      <button className='border-[#007cff] font-sans border-2 custom-btn p-2 rounded-full px-5 hover:bg-[#007cff] transition duration-500 hover:scale-110 hover:-translate-y-1'>
+        About me
       </button>
     </div>
   )
