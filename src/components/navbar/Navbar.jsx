@@ -17,8 +17,8 @@ const Navbar = () => {
         <Link to='/Research'>Research</Link>
       </div>
       <div className='flex gap-3'>
-        <FacebookIcon/>
-        <InstagramIcon/>
+        <FacebookIcon sx={{ cursor: 'pointer' }}/>
+        <InstagramIcon sx={{ cursor: 'pointer' }}/>
       </div>
     </div>
   )

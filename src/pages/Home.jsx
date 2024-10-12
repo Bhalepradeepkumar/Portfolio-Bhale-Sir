@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import ScrambleText from "../components/Home/ScrambleText.jsx";
-import BottomAnimation from "../components/Home/BottomAnimation.jsx";
 import Button from "../components/Home/Button.jsx";
 import Preloader from "../components/Home/Preloader.jsx";
 import AboutMe from "../components/Home/AboutMe.jsx";
@@ -9,6 +8,7 @@ import {useEffect } from "react";
 import {motion} from 'framer-motion'
 import { useSelector, useDispatch } from "react-redux";
 import Office from "../components/Home/Office.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 import "./css/Home.css";
 import { setVisibility } from "../redux/slices/timeline.js";
 
@@ -57,16 +57,13 @@ const Home = () => {
             <Button />
           </div>
 
-          {/* bottom content  */}
-          <div className="w-[100vw] flex justify-center">
-            <BottomAnimation />
-          </div>
-
           {/* office  */}
           <Office/>
 
           {/* about me  */}
           <AboutMe />
+
+          <Footer/> 
         </div>
       )}
     </motion.div>
