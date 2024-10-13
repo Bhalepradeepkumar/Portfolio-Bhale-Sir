@@ -1,6 +1,20 @@
 .image {
-    background-image: url('../../assets/tom.jpeg'); /* Ensure the path is correct */
-    background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat; 
-  }
+  background-image: url('../../assets/tom.jpeg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-repeat: no-repeat; 
+  filter: grayscale(100%);
+  transition: filter 1s ease-in; /* Apply transition here */
+}
+
+.image:hover {
+  filter: grayscale(0%);
+}
+
+.aboutMe{
+  background: radial-gradient(
+    circle at 50% -70%,
+    rgb(117, 58, 163) 15%,
+    rgb(36, 43, 61) 50%,
+    rgb(26, 22, 29) 100%
+    );
+}

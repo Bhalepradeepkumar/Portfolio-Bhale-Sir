@@ -1,12 +1,9 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Card from "../components/education/Card";
-import Line from "../components/common/Line";
-import WorkExperience from "../components/education/WorkExperience";
 import ImageText from "../components/common/ImageText";
 import "./css/aboutMe.css";
 import tom from "../assets/tom.jpeg";
-import { motion,useMotionValue,useTransform } from "framer-motion";
 
 const AboutMe = () => {
   const aboutMe = {
@@ -42,19 +39,13 @@ const AboutMe = () => {
     `,
   };
 
-  const x = useMotionValue(0)
-  const opacity = useTransform(x, [-100, 0, 100], [0, 1, 0])
 
   return (
-    <motion.div className="w-[100%] h-[100%] bg-[#2a2a2a]"
-    drag="x" style={{ x, opacity }}
+    <div className="aboutMe w-[100%] h-[100%] bg-[#2a2a2a]"
     >
       <Navbar />
       <div className="pt-20"></div>
       <ImageText title={aboutMe.title} subtitle={aboutMe.subtitle} content={aboutMe.content}/>
-
-      {/* work experience  */}
-      <ImageText title={workExperience.title} subtitle={workExperience.subtitle} content={workExperience.content} direction={"row-reverse"}/>
 
       <div className="w-[100vw] flex justify-center items-center h-[30vh]">
       </div>
@@ -63,13 +54,7 @@ const AboutMe = () => {
         <Card path={tom} />
       </div>
 
-      <div className="w-[100vw] flex justify-center items-center h-[30vh]">
-      </div>
-      <ImageText title={awards.title} subtitle={awards.subtitle} content={awards.content} direction={"row-reverse"}/>
-      <div className="w-[100vw] flex justify-center items-center h-[30vh]">
-      </div>
-    
-    </motion.div>
+    </div>
   );
 };
 

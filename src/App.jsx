@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { Button } from "@mui/material";
 import AboutMe from "./pages/AboutMe";
 import Research from "./pages/Research";
+import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
+          <Route path="/Projects" element={<Projects />} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Research" element={<Research />} />
           <Route path="/button" element={<Button />} />

@@ -1,0 +1,10 @@
+.navbar-box {
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .navbar-box.active {
+    background-color: lightblue;
+    border-color: blue;
+  }

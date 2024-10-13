@@ -1,14 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import NavbarBox from '../common/NavbarBox.jsx'
+import { useDispatch,useSelector } from 'react-redux';
+import { setVisibility } from '../../redux/slices/active.js';
 
 const Navbar2 = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const dispatch=useDispatch()
+  
+  const handleClick = (index) => {
+    setActiveIndex(index);
+    dispatch(setVisibility(index))
+  };
+  const {isActive}=useSelector(state=>state.active)
+
   return (
     <div className='w-[80vw] flex gap-4 justify-center'>
-      <NavbarBox icon={<EmojiEventsIcon/>} text="Awards"/>
-      <NavbarBox icon={<EmojiEventsIcon/>} text="Acheivements"/>
-      <NavbarBox icon={<EmojiEventsIcon/>} text="Professional Service"/>
-      <NavbarBox icon={<EmojiEventsIcon/>} text="Resource Person"/>
+   
+      {['Awards', 'Achievements', 'Professional Service', 'Resource Person'].map((text, index) => (
+        <NavbarBox
+          key={index}
+          icon={<EmojiEventsIcon  />}
+          text={text}
+          addedProperty={`${activeIndex === index ? 'bg-[rgba(0,124,255,0.25)]' : ''}`}
+          onClick={() => handleClick(index)}
+        />
+      ))}
+   
     </div>
   )
 }
