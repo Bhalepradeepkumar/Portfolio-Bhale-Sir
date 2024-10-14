@@ -2,11 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import { Button } from "@mui/material";
 import AboutMe from "./pages/AboutMe";
-import Research from "./pages/Research";
 import Projects from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
+import Teaching from "./pages/Teaching";
 
 function App() {
   const location = useLocation();
@@ -19,8 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/Research" element={<Research />} />
-          <Route path="/button" element={<Button />} />
+          <Route path="/Teaching" element={<Teaching />} />
         </Routes>
       </AnimatePresence>
     </div>

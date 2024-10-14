@@ -13,9 +13,9 @@ const Navbar = () => {
       <div className='font-bold'>Dr.Pradeep</div>
       <div className='flex items-center justify-between gap-10 h-auto border border-[#00000061] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
         <Link to='/'>Home</Link>  
-        <Link to='/Projects'>Projects</Link>  
+        <Link to='/Projects'>Projects</Link>
+        <Link to='/Teaching'>Teaching</Link>
         <Link to='/AboutMe'>About Me</Link>
-        <Link to='/Research'>Research</Link>
       </div>
       <div className='flex gap-3'>
         <FacebookIcon sx={{ cursor: 'pointer' }}/>
