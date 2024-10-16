@@ -1,0 +1,8 @@
+.teaching{
+    background: radial-gradient(
+        circle at 50% -50%,
+        rgb(117, 58, 163) 15%,
+        rgb(36, 43, 61) 50%,
+        rgb(26, 22, 29) 100%
+        );
+}

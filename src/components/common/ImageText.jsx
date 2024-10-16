@@ -11,7 +11,7 @@ const ImageText = (props) => {
       </div>
       <div className="absolute z-10 w-[70vw] h-[1vh] top-[15vh] left-10 bg-[#ca6715]"></div>
       <div className="w-[50vw] h-fit z-10 flex flex-col text-[#d7d7d7]">
-          <h1 className="text-[5rem] font-bold">About <span className="text-[#007cff]">Me</span></h1>
+          <h1 className="text-[5rem] mt-10 font-bold">About <span className="text-[#007cff]">Me</span></h1>
           <div className="mt-10">
           <p className="text-[1.4rem] font-bold">{props.subtitle}</p>
           <p className="text-[1rem] mt-5">

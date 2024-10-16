@@ -130,6 +130,7 @@ export const volunteer = [
     }
 ];
 
+// awards data
 export const awards = [
     { title: "Employee of the Month", year: 2023 },
     { title: "Best Team Player", year: 2023 },
@@ -424,6 +425,61 @@ export const projects = [
         using ADMM and simulated it in MATLAB, demonstrating its effectiveness. Additionally, I am working on 
         cost-effective computational resource allocation among cloud/edge service providers and VSPs based on user 
         requirements.`
+    }
+  ];
+ 
+//   students data
+export  const students = [
+    {
+      name: "Valencia Sebastiani",
+      institute: "National University of Singapore, Singapore",
+      degree: "MSc",
+      year: "2022-2023",
+      outcome: "IEEE FNWF 2023"
+    },
+    {
+      name: "Joshi Poorvi",
+      institute: "National University of Singapore, Singapore",
+      degree: "MSc",
+      year: "2023-2024",
+      outcome: "IEEE VTC 2024, IEEE Commun. Surv. Tutor. (Subm.)"
+    },
+    {
+      name: "Wu Xiaoke",
+      institute: "National University of Singapore, Singapore",
+      degree: "MSc",
+      year: "2023-2024",
+      outcome: "IEEE JIoT (Subm.)"
+    }
+  ];
+  
+// resources and link
+export const resources = [
+    {
+      category: "Free Books",
+      items: [
+        {
+          name: "Computer Networks: A Systems Approach",
+          link: "https://alakesh-kalita.github.io/resource.html"
+        },
+        {
+          name: "DSA: Cormen Solutions",
+          link: "https://alakesh-kalita.github.io/resource.html"
+        }
+      ]
+    },
+    {
+      category: "Drawing Tools",
+      items: [
+        {
+          name: "draw.io",
+          link: "https://alakesh-kalita.github.io/resource.html"
+        },
+        {
+          name: "Sketchpad",
+          link: "https://alakesh-kalita.github.io/resource.html"
+        }
+      ]
     }
   ];
   

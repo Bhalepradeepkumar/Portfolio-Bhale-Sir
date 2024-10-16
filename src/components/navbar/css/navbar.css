@@ -2,4 +2,12 @@
     background:transparent;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    opacity: 0;
+    animation: op 8s;
+}
+
+@keyframes op { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    
 }

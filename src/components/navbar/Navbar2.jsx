@@ -15,7 +15,7 @@ const Navbar2 = () => {
   const {isActive}=useSelector(state=>state.active)
 
   return (
-    <div className='w-[80vw] flex gap-4 justify-center'>
+    <div className='w-[80vw] flex flex-wrap gap-4 justify-center'>
    
       {['Awards', 'Achievements', 'Professional Service', 'Resource Person'].map((text, index) => (
         <NavbarBox

@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
-import Card from "../components/education/Card";
 import ImageText from "../components/common/ImageText";
 import "./css/aboutMe.css";
-import tom from "../assets/tom.jpeg";
 
 const AboutMe = () => {
   const aboutMe = {
@@ -41,18 +39,10 @@ const AboutMe = () => {
 
 
   return (
-    <div className="aboutMe w-[100%] h-[100%] bg-[#2a2a2a]"
-    >
+    <div className="aboutMe w-[100%] h-[100%] bg-[#2a2a2a]"> 
       <Navbar />
       <div className="pt-20"></div>
       <ImageText title={aboutMe.title} subtitle={aboutMe.subtitle} content={aboutMe.content}/>
-
-      <div className="w-[100vw] flex justify-center items-center h-[30vh]">
-      </div>
-      {/* Education */}
-      <div>
-        <Card path={tom} />
-      </div>
 
     </div>
   );

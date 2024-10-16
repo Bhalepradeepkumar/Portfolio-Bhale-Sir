@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import {students} from '../../data/data.js'
 
 function createData(Name, Institute, Degree, Year, Outcome) {
   return { Name, Institute, Degree, Year, Outcome };
@@ -22,7 +23,7 @@ const rows = [
 export default function BasicTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ width: '100vw', padding:"1vw" }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
@@ -33,18 +34,18 @@ export default function BasicTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {students.map((student,index) => (
             <TableRow
-              key={row.name}
+              key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.name}
+                {student.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell align="right">{student.institute}</TableCell>
+              <TableCell align="right">{student.degree}</TableCell>
+              <TableCell align="right">{student.year}</TableCell>
+              <TableCell align="right">{student.outcome}</TableCell>
             </TableRow>
           ))}
         </TableBody>
