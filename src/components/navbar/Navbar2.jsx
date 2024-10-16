@@ -16,7 +16,7 @@ const Navbar2 = () => {
 
   return (
     <div className='w-[80vw] flex flex-wrap gap-4 justify-center'>
-   
+      {console.log("check kar lo",isActive)}
       {['Awards', 'Achievements', 'Professional Service', 'Resource Person'].map((text, index) => (
         <NavbarBox
           key={index}

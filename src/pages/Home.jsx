@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import Office from "../components/Home/Office.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-import Table from "../components/teaching/Table.jsx";
 import MyStudents from "../components/Home/MyStudents.jsx";
 import "./css/Home.css";
 import { setVisibility } from "../redux/slices/timeline.js";

@@ -22,7 +22,7 @@ const AboutMe = () => {
         <p className='text-[#CDCDCD]'>focused on delivering impactful and fully functional solutions.</p>
     </div>
     <Navbar2 />
-    {isActive.payload===0 && <Awards />}
+    {(isActive.payload===0 || isActive===0 )&& <Awards />}
     {isActive.payload===1 && <Achievements />}
     {isActive.payload===2 && <ProfessionalServices />}
     {console.log(isActive)}

@@ -11,7 +11,7 @@ const Footer = () => {
         <InstagramIcon fontSize="large" sx={{ cursor: 'pointer' }}/>
         <LinkedInIcon fontSize="large" sx={{ cursor: 'pointer' }}/>
       </div>
-      <div className="text-white font-[josefin] mt-5 text-xl">© 2024 All Rights Reserved</div>
+      <div className="text-white font-[josefin] mt-5 text-xl p-10">© 2024 All Rights Reserved</div>
     </div>
   );
 };

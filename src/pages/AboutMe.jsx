@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
 import ImageText from "../components/common/ImageText";
+import Footer from "../components/Footer/Footer";
 import "./css/aboutMe.css";
 
 const AboutMe = () => {
@@ -43,7 +44,7 @@ const AboutMe = () => {
       <Navbar />
       <div className="pt-20"></div>
       <ImageText title={aboutMe.title} subtitle={aboutMe.subtitle} content={aboutMe.content}/>
-
+      <Footer/>
     </div>
   );
 };
