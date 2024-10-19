@@ -25,7 +25,7 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const text = "Hi, I am Dr.Pradeep Kumar Bhale";
+  const text = "Hi, I am Dr. प्रदीप कुमार भाले";
   return (
     <motion.div
       className={`home w-[100vw] ${!isVisibility ? "h-[100vh]" : ""}`}
@@ -61,6 +61,9 @@ const Home = () => {
 
           {/* office  */}
           <Office />
+          {/* about me  */}
+          <AboutMe />
+          
           {/* <div className="w-[100vw]">
             <Table />
           </div> */}
@@ -72,8 +75,6 @@ const Home = () => {
             <MyStudents />
           </div>
 
-          {/* about me  */}
-          <AboutMe />
 
           <Footer />
         </div>

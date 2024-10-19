@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar/Navbar";
-import { webDevelopmentProjects, blockchainProjects, mobileDevelopmentProjects, machineLearningProjects } from "../data/projects";
+import { journals, conferences, workshops, preprints, patents } from "../data/researchData";
 import { useSelector } from "react-redux";
 import CategoryBar from "../components/ResearchWork/CategoryBar";
 import SideList from "../components/ResearchWork/SideList";
@@ -9,8 +9,9 @@ import "./css/Projects.css";
 const ResearchWork = () => {
   const { sideListVar } = useSelector((state) => state.research);
   const { topListVar } = useSelector((state) => state.research);
-  const data = [webDevelopmentProjects, blockchainProjects, mobileDevelopmentProjects, machineLearningProjects];
-  const category = ["Web Development", "Blockchain", "Mobile Development", "Machine Learning"];
+  const data = [journals, conferences, workshops, preprints, patents];
+  const dataList = ["journals", "conferences", "workshops", "preprints", "patents"];
+
   return (
     <div className="projects">
       {/* navbar  */}
@@ -27,36 +28,43 @@ const ResearchWork = () => {
         )}
         <div>
           {/* top bar  */}
-          <CategoryBar data={category}/>
+          <CategoryBar data={dataList}/>
 
               {(topListVar.payload === 0 && sideListVar.payload) && (
                 <ProjectData
-                  title={webDevelopmentProjects[sideListVar.payload]?.title}
-                  description={webDevelopmentProjects[sideListVar.payload]?.description}
+                  title={journals[sideListVar.payload]?.title}
+                  description={journals[sideListVar.payload]?.description}
                   link={`https://tailwindcss.com/docs/text-decoration-style`}
                 />
               ) }
 
-            {console.log(blockchainProjects)}
+            {console.log(conferences)}
           {(topListVar.payload === 1 && sideListVar.payload) && (
             <ProjectData
-              title={blockchainProjects[sideListVar.payload]?.title}
-              description={blockchainProjects[sideListVar.payload]?.description}
+              title={conferences[sideListVar.payload]?.title}
+              description={conferences[sideListVar.payload]?.description}
               link={`https://tailwindcss.com/docs/text-decoration-style`}
             />
           ) }
 
           {(topListVar.payload === 2 && sideListVar.payload) && (
             <ProjectData
-              title={mobileDevelopmentProjects[sideListVar.payload]?.title}
-              description={mobileDevelopmentProjects[sideListVar.payload]?.description}
+              title={workshops[sideListVar.payload]?.title}
+              description={workshops[sideListVar.payload]?.description}
               link={`https://tailwindcss.com/docs/text-decoration-style`}
             />
           )}
           {(topListVar.payload === 3 && sideListVar.payload) && (
             <ProjectData
-              title={machineLearningProjects[sideListVar.payload]?.title}
-              description={machineLearningProjects[sideListVar.payload]?.description}
+              title={preprints[sideListVar.payload]?.title}
+              description={preprints[sideListVar.payload]?.description}
+              link={`https://tailwindcss.com/docs/text-decoration-style`}
+            />
+          )}
+          {(topListVar.payload === 4 && sideListVar.payload) && (
+            <ProjectData
+              title={patents[sideListVar.payload]?.title}
+              description={patents[sideListVar.payload]?.description}
               link={`https://tailwindcss.com/docs/text-decoration-style`}
             />
           )}

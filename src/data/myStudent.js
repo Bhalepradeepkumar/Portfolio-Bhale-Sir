@@ -2,89 +2,74 @@ import tom from '../assets/tom.jpeg';
 import R from '../assets/R.jpg';
 import Q from '../assets/Q.jpg';
 
-export const itemData = [
+// PhD Students
+export const phdStudents = [
   {
     img: tom,
-    name: 'Bed',
-    institute: 'ABC Institute of Design',
+    name: 'John Doe',
+    institute: 'ABC Institute of Technology',
     year: 2020,
-    degree: 'Bachelor of Design',
+    degree: 'PhD in Machine Learning',
   },
   {
     img: R,
-    name: 'Books',
+    name: 'Jane Smith',
     institute: 'XYZ University',
     year: 2021,
-    degree: 'Master of Literature',
+    degree: 'PhD in Artificial Intelligence',
   },
+];
+
+// MTech Students
+export const mtechStudents = [
   {
     img: Q,
-    name: 'Sink',
-    institute: 'ABC Institute of Design',
-    year: 2020,
-    degree: 'Bachelor of Design',
-  },
-  {
-    img: R,
-    name: 'Kitchen',
-    institute: 'XYZ University',
-    year: 2019,
-    degree: 'Bachelor of Architecture',
-  },
-  {
-    img: tom,
-    name: 'Blinds',
-    institute: 'DEF College',
+    name: 'Alex Johnson',
+    institute: 'ABC Institute of Technology',
     year: 2022,
-    degree: 'Diploma in Interior Design',
+    degree: 'MTech in Computer Science',
   },
   {
-    img: Q,
-    name: 'Chairs',
-    institute: 'GHI University',
-    year: 2020,
-    degree: 'Master of Industrial Design',
-  },
-  {
-    img: Q,
-    name: 'Laptop',
-    institute: 'LMN University',
+    img: R,
+    name: 'Emily Davis',
+    institute: 'DEF University',
     year: 2021,
-    degree: 'Bachelor of Computer Science',
+    degree: 'MTech in Information Technology',
   },
+];
+
+// BTech Students
+export const btechStudents = [
   {
-    img: R,
-    name: 'Doors',
-    institute: 'PQR Institute of Design',
-    year: 2018,
-    degree: 'Bachelor of Architecture',
+    img: tom,
+    name: 'Michael Lee',
+    institute: 'LMN Institute of Engineering',
+    year: 2021,
+    degree: 'BTech in Computer Science',
   },
   {
     img: Q,
-    name: 'Coffee',
-    institute: 'STU College of Arts',
+    name: 'Olivia Taylor',
+    institute: 'PQR Institute of Technology',
     year: 2020,
-    degree: 'Bachelor of Fine Arts',
+    degree: 'BTech in Mechanical Engineering',
+  },
+];
+
+// Internship Students
+export const internshipStudents = [
+  {
+    img: tom,
+    name: 'Chris Brown',
+    institute: 'STU College of Technology',
+    year: 2023,
+    degree: 'Internship in Software Development',
   },
   {
     img: R,
-    name: 'Storage',
+    name: 'Sophia Williams',
     institute: 'VWX University',
     year: 2022,
-    degree: 'Master of Architecture',
-  },
-  {
-    img: tom,
-    name: 'Candle',
-    institute: 'YZA Institute of Design',
-    year: 2020,
-    degree: 'Bachelor of Industrial Design',
-  },
-  {
-    img: R,
-    name: 'Coffee table',
-    institute: 'BCD University',
-    year: 2021,
-    degree: 'Diploma in Furniture Design',
+    degree: 'Internship in Data Science',
   },
 ];

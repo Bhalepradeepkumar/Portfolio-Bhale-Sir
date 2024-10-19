@@ -12,6 +12,7 @@ const Navbar = () => {
       <div className='flex items-center justify-between gap-10 max-sm:gap-4 h-auto border border-[#00000061] bg-[#0300145e] max-sm:text-[0.8rem] mr-[15px] max-sm:px-[5px] max-md:p-[10px] px-[20px] py-[10px] rounded-full text-gray-200'>
         <Link to='/'>Home</Link>  
         <Link to='/Projects'>Projects</Link>
+        <Link to='/ResearchWork'>Research Work</Link>
         <Link to='/AboutMe'>About Me</Link>
       </div>
       <div className='flex gap-3'>

@@ -9,6 +9,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
+import MicrosoftIcon from '@mui/icons-material/Microsoft';
 
 export default function CustomizedTimeline() {
   const educationAndWork = [
@@ -17,6 +18,27 @@ export default function CustomizedTimeline() {
       name: "XYZ High School",
       year: "2010-2015",
       icon: <SchoolIcon sx={{ color: 'white' }} />,
+      dotColor: '#007cff'
+    },
+    {
+      type: "College",
+      name: "ABC College of Engineering",
+      year: "2016-2020",
+      icon: <SchoolIcon sx={{ color: 'white' }} />,
+      dotColor: 'green'
+    },
+    {
+      type: "Current Work",
+      name: "Peak Flo",
+      year: "2024-Present",
+      icon: <WorkIcon sx={{ color: 'white' }} />,
+      dotColor: 'red'
+    },
+    {
+      type: "School",
+      name: "XYZ High School",
+      year: "2010-2015",
+      icon: <MicrosoftIcon sx={{ color: 'white' }} />,
       dotColor: '#007cff'
     },
     {
