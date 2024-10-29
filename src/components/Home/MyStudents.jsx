@@ -12,10 +12,10 @@ export default function TitlebarBelowMasonryImageList() {
   return (
     <Box sx={{ width: '80vw' }}>
         
-        <Students data={phdStudents} category="PHD STUDENTS"/>
-        <Students data={mtechStudents} category="MTech STUDENTS"/>
-        <Students data={btechStudents} category="Btech STUDENTS"/>
-        <Students data={internshipStudents} category="INTERNSHIP STUDENTS"/>
+        {(phdStudents.length>0)&&<Students data={phdStudents} category="PHD STUDENTS"/>}
+        {(mtechStudents.length>0)&&<Students data={mtechStudents} category="MTech STUDENTS"/>}
+        {(btechStudents.length>0)&&<Students data={btechStudents} category="Btech STUDENTS"/>}
+        {(internshipStudents.length>0)&&<Students data={internshipStudents} category="INTERNSHIP STUDENTS"/>}
     </Box>
   );
 }

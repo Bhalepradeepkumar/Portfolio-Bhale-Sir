@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+src\assets
+
+.png
+.jpg
+.jpeg

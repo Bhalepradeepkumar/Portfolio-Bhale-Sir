@@ -20,6 +20,7 @@
     "@nextui-org/navbar": "^2.0.37",
     "@reduxjs/toolkit": "^2.2.8",
     "framer-motion": "^11.11.7",
+    "gsap": "^3.12.5",
     "portfolio-sir": "file:",
     "react": "^18.3.1",
     "react-chrono": "^2.6.1",

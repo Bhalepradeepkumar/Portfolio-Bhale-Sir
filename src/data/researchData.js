@@ -6,47 +6,86 @@ export const journals = [
       link: ""
   },
   {
-      title: "Deep Learning for Edge Computing: A Comprehensive Survey",
-      description: `
-          Published in the IEEE Transactions on Cloud Computing, this paper provides an in-depth survey of how deep learning techniques 
-          can be optimized for edge computing. It covers architecture, performance metrics, and challenges in edge-based deep learning 
-          models for real-time data processing.`,
-      link: "https://example.com/deep-learning-edge-computing"
+      title: "Lightweight and Transparent IDS With Optimum Placement Strategy to Mitigate Mixed-Rate DDoS Attacks in IoT Networks",
+      description: `This paper discusses a lightweight and transparent Intrusion Detection System (IDS) designed with an optimal placement strategy to effectively mitigate mixed-rate DDoS attacks in IoT networks.`,
+      link: "https://example.com/lightweight-ids-mitigation"
   },
   {
-      title: "A Secure Blockchain Framework for IoT Devices",
-      description: `
-          Published in the Journal of Network and Computer Applications, this research proposes a secure blockchain framework for IoT devices, 
-          focusing on privacy and scalability. The framework enables secure communication among devices and mitigates various cyber threats 
-          like spoofing and data tampering.`,
-      link: "https://example.com/blockchain-iot-framework"
+      title: "A Hybrid IDS for Detection and Mitigation of Sinkhole Attack in 6LoWPAN Networks",
+      description: `The study presents a hybrid Intrusion Detection System that addresses detection and mitigation strategies for sinkhole attacks specifically in 6LoWPAN networks.`,
+      link: "https://example.com/hybrid-ids-sinkhole"
+  },
+  {
+      title: "A Novel Energy-Efficient Scheme for RPL Attacker Identification in IoT Networks Using Discrete Event Modeling",
+      description: `This research introduces an innovative energy-efficient scheme for identifying attackers in RPL-based IoT networks, utilizing discrete event modeling techniques.`,
+      link: "https://example.com/rpl-attacker-identification"
+  },
+  {
+      title: "Effective Injection of Adversarial Botnet Attacks in IoT Ecosystem Using Evolutionary Computing",
+      description: `The paper explores methods for effectively injecting adversarial botnet attacks into IoT ecosystems through evolutionary computing approaches.`,
+      link: "https://example.com/adversarial-botnet-attacks"
+  },
+  {
+      title: "A Study of Today’s AI Through Chatbots and Rediscovery of Machine Intelligence",
+      description: `This article examines the current landscape of artificial intelligence through the lens of chatbots, contributing to a broader understanding of machine intelligence.`,
+      link: "https://example.com/study-ai-chatbots"
+  },
+  {
+      title: "Detecting Rogue Bridge Access Point Using Threshold Cryptography",
+      description: `This paper presents a method for detecting rogue bridge access points using threshold cryptography, enhancing the security of network communications.`,
+      link: "https://example.com/rogue-bridge-detection"
   }
 ];
 
 export const conferences = [
-  // Do not remove it
-  {
-      title: "",
-      description: ``,
-      link: ""
-  },
-  {
-      title: "5G Networks and AI: Optimizing Communication Systems",
-      description: `
-          Presented at the IEEE International Conference on 5G and AI, this paper discusses how AI-driven techniques can optimize communication 
-          in 5G networks, focusing on latency reduction and improving bandwidth utilization. The study also presents a case of 5G deployments 
-          in smart cities.`,
-      link: "https://example.com/5g-ai-communication"
-  },
-  {
-      title: "Quantum Key Distribution Protocols for Secure Communication",
-      description: `
-          This paper was presented at the International Conference on Quantum Cryptography. It explores recent advances in quantum key distribution 
-          (QKD) protocols and their potential for secure communication over classical and quantum networks. The research also outlines experimental 
-          results from quantum communication testbeds.`,
-      link: "https://example.com/quantum-key-distribution"
-  }
-];
+    // Do not remove it
+    {
+        title: "LORD: LOw Rate DDoS Attack Detection and Mitigation Using Lightweight Distributed Packet Inspection Agent in IoT Ecosystem",
+        description: `This paper presents a lightweight distributed packet inspection agent for detecting and mitigating low-rate DDoS attacks in IoT ecosystems. It emphasizes energy efficiency and real-time monitoring.`,
+        link: "https://example.com/lord-ddos-detection"
+    },
+    {
+        title: "An Adaptive and Lightweight Solution to Detect Mixed Rate IP Spoofed DDoS Attack in IoT Ecosystem",
+        description: `This research proposes an adaptive solution for detecting mixed-rate IP spoofed DDoS attacks in IoT environments, enhancing security and resource management.`,
+        link: "https://example.com/adaptive-ddos-solution"
+    },
+    {
+        title: "ML for IEEE 802.15.4e/TSCH: Energy Efficient Approach to Detect DDoS Attack Using Machine Learning",
+        description: `The paper discusses a machine learning approach for detecting DDoS attacks specifically tailored for IEEE 802.15.4e/TSCH networks, focusing on energy efficiency.`,
+        link: "https://example.com/ml-detection-ieee"
+    },
+    {
+        title: "DAISS: Design of an Attacker Identification Scheme in CoAP Request/Response Spoofing",
+        description: `This work introduces DAISS, a design framework aimed at identifying attackers in CoAP request/response spoofing scenarios within IoT networks.`,
+        link: "https://example.com/daiss-attacker-identification"
+    },
+    {
+        title: "Energy Efficient Approach to Detect Sinkhole Attack Using Roving IDS in 6LoWPAN Network",
+        description: `This paper presents a roving Intrusion Detection System (IDS) for effectively detecting sinkhole attacks in 6LoWPAN networks with an emphasis on energy efficiency.`,
+        link: "https://example.com/sinkhole-attack-6lowpan"
+    },
+    {
+        title: "Buffer Reservation Attack Prevention Using Legitimacy Score in 6LoWPAN Network",
+        description: `This research proposes a legitimacy score-based method to prevent buffer reservation attacks in 6LoWPAN networks, improving overall security.`,
+        link: "https://example.com/buffer-reservation-attack-prevention"
+    },
+    {
+        title: "Lifetime Enhancement for 6LoWPAN Network Using Clustering Approach: Use Case in Smart Agriculture",
+        description: `The paper discusses a clustering approach to enhance the lifetime of 6LoWPAN networks, with applications in smart agriculture.`,
+        link: "https://example.com/lifetime-enhancement-6lowpan"
+    },
+    {
+        title: "ArsPAN: Attacker Revelation Scheme Using Discrete Event System in 6LoWPAN Based Buffer Reservation Attack",
+        description: `This work introduces ArsPAN, an attacker revelation scheme leveraging discrete event systems to detect buffer reservation attacks in 6LoWPAN networks.`,
+        link: "https://example.com/ars-pan-attacker-revelation"
+    },
+    {
+        title: "Energy Efficient Scheme for RPL Attacker Identification in IoT Networks Using Discrete Event Modeling",
+        description: `This paper presents an energy-efficient scheme for identifying attackers in RPL-based IoT networks using discrete event modeling techniques.`,
+        link: "https://example.com/rpl-attacker-identification"
+    },
+  ];
+  
 
 export const workshops = [
   // Do not remove it
@@ -55,21 +94,6 @@ export const workshops = [
       description: ``,
       link: ""
   },
-  {
-      title: "Robotics in Healthcare: Innovations and Ethical Challenges",
-      description: `
-          Conducted at the Robotics in Healthcare Workshop 2024, this session focused on the latest innovations in medical robotics, 
-          including surgical robots, rehabilitation devices, and assistive technologies. The ethical considerations of deploying 
-          robots in healthcare were also discussed.`,
-      link: "https://example.com/robotics-healthcare-workshop"
-  },
-  {
-      title: "Data-Driven Decision Making in Smart Manufacturing",
-      description: `
-          Held at the Smart Manufacturing Workshop, this presentation explored how data analytics and AI can be used to make informed decisions 
-          in manufacturing. It also delved into predictive maintenance and supply chain optimization techniques.`,
-      link: "https://example.com/smart-manufacturing-workshop"
-  }
 ];
 
 export const preprints = [
@@ -79,22 +103,6 @@ export const preprints = [
       description: ``,
       link: ""
   },
-  {
-      title: "Federated Learning for Distributed Data Privacy",
-      description: `
-          This pre-print proposes a novel federated learning framework designed to maintain user data privacy in distributed systems. 
-          By distributing the machine learning model across devices, the framework ensures data never leaves the local environment, 
-          preserving privacy while optimizing for training efficiency.`,
-      link: "https://example.com/federated-learning-privacy"
-  },
-  {
-      title: "Neural Architecture Search for Resource-Constrained Devices",
-      description: `
-          This research outlines a new approach for neural architecture search (NAS) tailored for resource-constrained IoT devices. 
-          The proposed solution drastically reduces the search space while maintaining high model accuracy, making it ideal for edge 
-          computing environments.`,
-      link: "https://example.com/neural-architecture-search"
-  }
 ];
 
 export const patents = [
@@ -104,18 +112,4 @@ export const patents = [
       description: ``,
       link: ""
   },
-  {
-      title: "System for Secure Biometric Authentication Using Blockchain",
-      description: `
-          This patent describes a blockchain-based system that enhances security for biometric authentication systems. By decentralizing 
-          biometric data storage and using a blockchain ledger, the system prevents unauthorized access and data breaches, improving user privacy.`,
-      link: "https://example.com/biometric-blockchain-patent"
-  },
-  {
-      title: "Energy-Efficient AI Chip for Edge Devices",
-      description: `
-          This patent presents a novel AI chip designed for energy-efficient operation in edge devices. The chip uses a low-power architecture 
-          optimized for deep learning tasks, enabling real-time processing on resource-constrained hardware without sacrificing performance.`,
-      link: "https://example.com/ai-chip-patent"
-  }
 ];

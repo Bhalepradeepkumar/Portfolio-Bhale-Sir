@@ -12,6 +12,8 @@ import Footer from "../components/Footer/Footer.jsx";
 import MyStudents from "../components/Home/MyStudents.jsx";
 import "./css/Home.css";
 import { setVisibility } from "../redux/slices/timeline.js";
+import { phdStudents,mtechStudents,btechStudents,internshipStudents } from '../data/myStudent.js';
+
 
 const Home = () => {
   const { isVisibility } = useSelector((state) => state.timeline);
@@ -51,9 +53,14 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="max-md:text-[1rem]">
-              <ScrambleText />
-            </div>
+            <ScrambleText/>
+            {/* <div className="max-md:text-[1.1rem] text-[1.3rem] flex flex-col justify-center items-center" style={{fontFamily:'Josefin sans'}}>
+              <p>
+                I did PhD from Indian Institue of Technology Guwahati (IITG)
+              </p>
+              <p>&</p>
+              <p>I teaches Ethical Hacking and Cyber Security</p>
+            </div> */}
             <a href="./AboutMe">
               <Button />
             </a>
@@ -63,18 +70,13 @@ const Home = () => {
           <Office />
           {/* about me  */}
           <AboutMe />
-          
-          {/* <div className="w-[100vw]">
-            <Table />
-          </div> */}
 
           <div className="w-[100vw] flex flex-col justify-center items-center">
-            <div className="text-4xl w-fit pt-[10vh] pb-[5vh] font-bold mb-8 text-white">
+            {(phdStudents.length>0 || mtechStudents.length>0 || btechStudents.length>0 || internshipStudents.length>0)&&<div className="text-4xl w-fit pt-[10vh] pb-[5vh] font-bold mb-8 text-white">
               My <span className="text-[#007cff]">Students</span>
-            </div>
+            </div>}
             <MyStudents />
           </div>
-
 
           <Footer />
         </div>

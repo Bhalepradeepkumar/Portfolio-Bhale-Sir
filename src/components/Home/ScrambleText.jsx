@@ -1,14 +1,15 @@
 import React, { useRef, useEffect } from "react";
 import "./css/animatedText.css";
 
+// this code written by umar Farooq
+// id -> umarcbs
+// on code pen 
 const ScrambleText = () => {
-  const textRef = useRef(null); // React ref to access the DOM element
-
-  // TextScramble class (no changes required)
+  const textRef = useRef(null);
   class TextScramble {
     constructor(el) {
       this.el = el;
-      this.chars = '!<>-_\\/[]{}—=+*^?#________';
+      this.chars = '!<>-_\\/?][]}{}`~/\}—=+*^?#!________';
       this.update = this.update.bind(this);
     }
 
@@ -20,8 +21,8 @@ const ScrambleText = () => {
       for (let i = 0; i < length; i++) {
         const from = oldText[i] || '';
         const to = newText[i] || '';
-        const start = Math.floor(Math.random() * 40);
-        const end = start + Math.floor(Math.random() * 40);
+        const start = Math.floor(Math.random() * 30);
+        const end = start + Math.floor(Math.random() * 30);
         this.queue.push({ from, to, start, end });
       }
       cancelAnimationFrame(this.frameRequest);
@@ -74,23 +75,22 @@ const ScrambleText = () => {
     'Cyber Security'
   ];
 
-  // Effect to apply the scrambling effect when the component mounts
   useEffect(() => {
-    const el = textRef.current; // Access the DOM element via ref
+    const el = textRef.current; 
     const fx = new TextScramble(el);
 
     let counter = 0;
     const next = () => {
       fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 2000); // Change text every 2 seconds
+        setTimeout(next, 2000); 
       });
       counter = (counter + 1) % phrases.length;
     };
 
-    next(); // Start the scramble effect
+    next(); 
 
-    return () => cancelAnimationFrame(fx.frameRequest); // Cleanup on component unmount
-  }, []); // Empty dependency array means this runs once on mount
+    return () => cancelAnimationFrame(fx.frameRequest);
+  }, []); 
 
   return (
     <div className="text-change-container">
