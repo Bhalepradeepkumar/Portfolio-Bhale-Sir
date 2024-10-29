@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Office from "../components/Home/Office.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import MyStudents from "../components/Home/MyStudents.jsx";
-import "./css/Home.css";
+import "./css/home.css";
 import { setVisibility } from "../redux/slices/timeline.js";
 import { phdStudents,mtechStudents,btechStudents,internshipStudents } from '../data/myStudent.js';
 
