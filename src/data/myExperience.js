@@ -4,7 +4,7 @@
 
 export const educationAndWork = [
     {
-      type: "BE",
+      type: "Bachelor of enginnering",
       name: "Government College of Engineering, Aurangabad",
       year: "2006 - 2010",
       icon: "school",
