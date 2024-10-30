@@ -67,9 +67,9 @@ const ScrambleText = () => {
   const phrases = [
     'I did PhD',
     'from',
-    'Indian Institue of Technology Guwahati (IITG) ',
+    'IIT Guwahati ',
     '&',
-    'I teaches',
+    'I teach',
     'Ethical Hacking',
     'and ',
     'Cyber Security'

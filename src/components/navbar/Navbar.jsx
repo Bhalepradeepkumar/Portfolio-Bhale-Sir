@@ -27,7 +27,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div >
+      <div className="sm:hidden">
         <NavbarPhoneView />
       </div>
     </div>

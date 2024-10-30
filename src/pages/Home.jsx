@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Office from "../components/Home/Office.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import MyStudents from "../components/Home/MyStudents.jsx";
+import {Link} from 'react-router-dom'
 import "./css/home.css";
 import { setVisibility } from "../redux/slices/timeline.js";
 import { phdStudents,mtechStudents,btechStudents,internshipStudents } from '../data/myStudent.js';
@@ -61,9 +62,9 @@ const Home = () => {
               <p>&</p>
               <p>I teaches Ethical Hacking and Cyber Security</p>
             </div> */}
-            <a href="./AboutMe">
+            <Link to='/AboutMe'>
               <Button />
-            </a>
+            </Link>
           </div>
 
           {/* office  */}
