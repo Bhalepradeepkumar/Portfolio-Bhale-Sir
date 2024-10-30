@@ -67,11 +67,11 @@ const ScrambleText = () => {
   const phrases = [
     'I did PhD',
     'from',
-    'IIT Guwahati ',
+    'IIT Guwahati',
     '&',
     'I teach',
     'Ethical Hacking',
-    'and ',
+    'and',
     'Cyber Security'
   ];
 
