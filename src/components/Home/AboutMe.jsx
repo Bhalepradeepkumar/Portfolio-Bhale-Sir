@@ -13,7 +13,7 @@ const AboutMe = () => {
   }, [isActive]);
   return (
     <div className='text-white w-[100vw] flex flex-col items-center font-sans'>
-      <div className='w-[90vw] h-[25vh] flex flex-col items-center justify-center'
+      <div className='w-[90vw] h-[25vh] flex flex-col items-center justify-center  max-sm:mt-[5vh] mb-[15vh]'
         style={{fontFamily: "Josefin Sans"}}
       >
         <p className='text-4xl'>Want To Know</p> 

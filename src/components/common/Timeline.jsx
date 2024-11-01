@@ -9,59 +9,19 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import Typography from '@mui/material/Typography';
-import MicrosoftIcon from '@mui/icons-material/Microsoft';
 import { educationAndWork } from '../../data/myExperience';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function CustomizedTimeline() {
-  // const educationAndWork = [
-  //   {
-  //     type: "School",
-  //     name: "XYZ High School",
-  //     year: "2010-2015",
-  //     icon: <SchoolIcon sx={{ color: 'white' }} />,
-  //     dotColor: '#007cff'
-  //   },
-  //   {
-  //     type: "College",
-  //     name: "ABC College of Engineering",
-  //     year: "2016-2020",
-  //     icon: <SchoolIcon sx={{ color: 'white' }} />,
-  //     dotColor: 'green'
-  //   },
-  //   {
-  //     type: "Current Work",
-  //     name: "Peak Flo",
-  //     year: "2024-Present",
-  //     icon: <WorkIcon sx={{ color: 'white' }} />,
-  //     dotColor: 'red'
-  //   },
-  //   {
-  //     type: "School",
-  //     name: "XYZ High School",
-  //     year: "2010-2015",
-  //     icon: <MicrosoftIcon sx={{ color: 'white' }} />,
-  //     dotColor: '#007cff'
-  //   },
-  //   {
-  //     type: "College",
-  //     name: "ABC College of Engineering",
-  //     year: "2016-2020",
-  //     icon: <SchoolIcon sx={{ color: 'white' }} />,
-  //     dotColor: 'green'
-  //   },
-  //   {
-  //     type: "Current Work",
-  //     name: "Peak Flo",
-  //     year: "2024-Present",
-  //     icon: <WorkIcon sx={{ color: 'white' }} />,
-  //     dotColor: 'red'
-  //   }
-  // ];
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   const icons=new Map([
     ["school", <SchoolIcon sx={{ color: 'white' }} />],
     ["work", <WorkIcon sx={{ color: 'white' }} />],
   ])
+
 
   return (
     <Timeline position="alternate">
@@ -78,16 +38,21 @@ export default function CustomizedTimeline() {
             <TimelineSeparator>
               <TimelineConnector />
               <TimelineDot sx={{ backgroundColor: item.dotColor }}>
-{/* {                console.log("item.icon",icons[item.icon])} */}
                 {icons.get(item.icon)}
               </TimelineDot>
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
-              <Typography variant="h6" component="span">
-                {item.type}
-              </Typography>
-              <Typography>{item.name}</Typography>
+              {
+                (isMobile)?
+                  <Typography variant="h6" component="span" sx={{fontSize:14}}>{item.type}</Typography>:
+              <Typography variant="h6" component="span">{item.type}</Typography>                
+              }
+              {(isMobile)?(
+                <Typography sx={{fontSize:12}}>{item.name}</Typography>
+              ):
+              (<Typography>{item.name}</Typography>)
+            }
             </TimelineContent>
           </TimelineItem>
         ))

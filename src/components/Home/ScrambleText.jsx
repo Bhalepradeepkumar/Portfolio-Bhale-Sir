@@ -93,7 +93,7 @@ const ScrambleText = () => {
   }, []); 
 
   return (
-    <div className="text-change-container">
+    <div className="text-change-container max-sm:text-[1rem] max-[370px]:text-[0.9rem]">
       <div ref={textRef} className="text-change"></div>
     </div>
   );

@@ -45,7 +45,7 @@ const Home = () => {
           {/* mid content  */}
           <div className="w-[100vw] h-[100vh] flex flex-col text-white gap-5 items-center justify-center">
             <div className="text-box text-5xl">
-              <div className="text max-lg:text-4xl max-md:text-3xl max-sm:text-xl">
+               <div className="text max-lg:text-4xl max-md:text-3xl max-sm:text-[1.7rem] max-[370px]:text-[1.5rem]">
                 {text.split(" ").map((char, index) => (
                   <span key={index} className="glow-letter">
                     {char}

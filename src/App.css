@@ -4,3 +4,8 @@ body{
     font-style: normal;
   }
 
+html{
+  overflow-x: hidden;
+    width: 100vw;
+}
+

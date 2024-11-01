@@ -13,7 +13,7 @@ export const educationAndWork = [
     {
       type: "Technical Associate",
       name: "Tech Mahindra Limited, Pune, India",
-      year: "September 2010 - September 2012",
+      year: "2010 - 2012",
       icon: "work",
       dotColor: 'red' // New color
     },
@@ -27,14 +27,14 @@ export const educationAndWork = [
     {
       type: "Assistant Professor",
       name: "Dr. B. R. Ambedkar National Institute of Technology Jalandhar",
-      year: "August 2014 - June 2016",
+      year: "2014 - 2016",
       icon: "work",
       dotColor: 'red' // New color
     },
     {
       type: "PhD",
       name: "Indian Institute of Technology Guwahati",
-      year: "July 2016 - Present",
+      year: "2016 - Present",
       icon: "school",
       dotColor: '#a833ff' // New color
     }
