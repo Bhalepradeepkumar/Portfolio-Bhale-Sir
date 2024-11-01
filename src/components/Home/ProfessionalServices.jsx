@@ -16,7 +16,7 @@ const ProfessionalServices = () => {
         {(membership.length>0)&&(<div className="mt-4">
           <p className="font-bold text-xl m-2">membership</p>
           {(membership.map((data, index) => (
-            <div key={index} className="flex gap-4">
+            <div key={index} className="flex gap-4 mb-4">
               - {data.text}{" "}
               <span className="date">
                 {data.date !== "N/A" ? data.date : ""}
@@ -27,7 +27,7 @@ const ProfessionalServices = () => {
         <div className="mt-4">
           <p className="font-bold text-xl m-2">reviewer</p>
           {reviewer.map((data, index) => (
-            <div key={index} className="flex gap-4">
+            <div key={index} className="flex gap-4 mb-4">
               - {data.text}{" "}
               <span className="date">
                 {data.date !== "N/A" ? data.date : ""}
@@ -39,7 +39,7 @@ const ProfessionalServices = () => {
         <div className="mt-4">
           <p className="font-bold text-xl m-2">technicalProgramCommittee</p>
           {technicalProgramCommittee.map((data, index) => (
-            <div key={index} className="flex gap-4">
+            <div key={index} className="flex gap-4 mb-4">
               - {data.text}{" "}
               <span className="date">
                 {data.date !== "N/A" ? data.date : ""}
@@ -51,7 +51,7 @@ const ProfessionalServices = () => {
         <div className="mt-4">
           <p className="font-bold text-xl m-2">volunteer</p>
           {volunteer.map((data, index) => (
-            <div key={index} className="flex gap-4">
+            <div key={index} className="flex gap-4 mb-4">
               - {data.text}{" "}
               <span className="date">
                 {data.date !== "N/A" ? data.date : ""}

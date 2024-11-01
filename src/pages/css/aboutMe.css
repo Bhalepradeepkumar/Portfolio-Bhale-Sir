@@ -6,6 +6,7 @@
   transition: filter 1s ease-in; /* Apply transition here */
 }
 .image1 {
+  margin-top: 5vh;
   background-image: url('../../assets/Profile.jpg'); /* Ensure the path is correct */
   background-size: cover;
   background-repeat: no-repeat; 

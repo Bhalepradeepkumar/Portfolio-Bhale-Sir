@@ -4,12 +4,23 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Footer = () => {
   return (
-    <div className="w-[100vw] flex mt-10 flex-col items-center justify-center">
+    <div className="w-[100vw] flex mt-10 flex-col items-center justify-center bg-[#3b3b3b18]">
       <div className="flex gap-10 mt-10 text-white">
         <a href="https://www.facebook.com/pradeepkumar.bhale?mibextid=JRoKGi"><FacebookIcon fontSize="large" sx={{ cursor: "pointer" }} /></a>
         <a href="https://www.linkedin.com/in/pradeepkumar-bhale-ph-d-b82970171/"><LinkedInIcon fontSize="large" sx={{ cursor: "pointer" }} /></a>
       </div>
-      <div className="flex justify-end w-[100vw] text-white">
+
+      <div className="flex items-center mt-10 flex-col w-[100vw] mb-20 text-white font-sans xl:hidden">
+            <div className=" text-2xl font-bold"><span className="text-[#007cff]">Developed</span> By</div>
+          <div className="mt-4">
+            <p className="mr-10 text-[1.1rem] font-bold">
+              Devansh Pratap Sisodiya
+            </p>
+            <p>devanshpratap21@gmail.com</p>
+          </div>
+      </div>
+
+      <div className="flex justify-end w-[100vw] mb-20 text-white max-xl:hidden">
         <div className="font-sans w-[25vw] flex">
           <p
             className="text-2xl font-bold"
@@ -24,9 +35,6 @@ const Footer = () => {
             <p>devanshpratap21@gmail.com</p>
           </div>
         </div>
-      </div>
-      <div className="text-white font-[josefin] mt-5 text-xl p-10">
-        © 2024 All Rights Reserved
       </div>
     </div>
   );

@@ -25,7 +25,6 @@ const AboutMe = () => {
     {(isActive.payload===0 || isActive===0 )&& <Awards />}
     {isActive.payload===1 && <Achievements />}
     {isActive.payload===2 && <ProfessionalServices />}
-    {console.log(isActive)}
     </div>
   )
 }
