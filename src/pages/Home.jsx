@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import Office from "../components/Home/Office.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import Logo from "../components/Home/Logo.jsx";
 import MyStudents from "../components/Home/MyStudents.jsx";
 import {Link} from 'react-router-dom'
 import "./css/home.css";
@@ -54,6 +55,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
+
             <ScrambleText/>
             {/* <div className="max-md:text-[1.1rem] text-[1.3rem] flex flex-col justify-center items-center" style={{fontFamily:'Josefin sans'}}>
               <p>
@@ -62,6 +64,7 @@ const Home = () => {
               <p>&</p>
               <p>I teaches Ethical Hacking and Cyber Security</p>
             </div> */}
+
             <Link to='/AboutMe'>
               <Button />
             </Link>
@@ -72,13 +75,14 @@ const Home = () => {
           {/* about me  */}
           <AboutMe />
 
-          <div className="w-[100vw] flex flex-col justify-center items-center">
+          <div className="w-[100vw] flex flex-col justify-center items-center mb-[5vh]">
             {(phdStudents.length>0 || mtechStudents.length>0 || btechStudents.length>0 || internshipStudents.length>0)&&<div className="text-4xl w-fit pt-[10vh] pb-[5vh] font-bold mb-8 text-white">
               My <span className="text-[#007cff]">Students</span>
             </div>}
             <MyStudents />
           </div>
 
+            {/* <Logo/> */}
           <Footer />
         </div>
       )}

@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
   const menuItems = [
     { text: 'Home', path: '/' },
     { text: 'Projects', path: '/projects' },
-    { text: 'Research', path: '/research' },
+    { text: 'Research', path: '/ResearchWork' },
     { text: 'About Me', path: '/aboutMe' }
   ];
 
